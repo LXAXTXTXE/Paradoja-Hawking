@@ -126,8 +126,11 @@ public class MovimientoJugador : MonoBehaviour
 
 
 
-
+	void OnTriggerEnter (Collider obj){
+		if (obj.gameObject.tag == "coin"){
+			obj.gameObject.SetActive (false);
+		}
 	}
-
+			}
 
 
